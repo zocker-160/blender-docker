@@ -1,13 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
-* [`2.79`, `latest` (*2.79/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.79/Dockerfile)
-* [`2.78c` (*2.78c/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.78c/Dockerfile)
-* [`2.77a` (*2.77a/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.77a/Dockerfile)
-* [`2.76b` (*2.76b/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.76b/Dockerfile)
-* [`2.75a` (*2.75a/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.75a/Dockerfile)
-* [`2.73a` (*2.73a/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.73a/Dockerfile)
+* [`2.79`, `latest` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79/Dockerfile)
+* [`2.78c` (*2.78c/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.78c/Dockerfile)
+* [`2.77a` (*2.77a/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.77a/Dockerfile)
+* [`2.76b` (*2.76b/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.76b/Dockerfile)
+* [`2.75a` (*2.75a/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.75a/Dockerfile)
+* [`2.73a` (*2.73a/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.73a/Dockerfile)
 
-These are the Docker Hub Blender autobuild images located [here](https://hub.docker.com/r/ikester/blender-autobuild/). For manual builds [look here](https://hub.docker.com/r/ikester/blender/) instead.
 
 ![Blender Logo](https://www.blender.org/wp-content/uploads/2015/03/blender_logo_socket.png)
 
@@ -26,7 +25,7 @@ The entry point for this image is the blender non-gui command line `blender -b`.
 To render a single frame from a `blendfile.blend` file located in `/source/path` on the docker host and save the result in the same directory:
 
 ```console
-$ docker run --rm -v /source/path/:/media/ ikester/blender /media/blendfile.blend -o /media/frame_### -f 1
+$ docker run --rm -v /source/path/:/media/ zocker160/blender /media/blendfile.blend -o /media/frame_### -f 1
 ```
 
 This will create a file named `frame_001.png` in the same directory as the source file, assuming that PNG is the default output format for that file.
@@ -36,13 +35,13 @@ This will create a file named `frame_001.png` in the same directory as the sourc
 For additional information on Blender's command line parameters and options please visit the command line reference in the [Blender Reference Manual](https://www.blender.org/manual/render/workflows/command_line.html).
 
 Or you can just run:
-`docker run --rm ikester/blender --help`
+`docker run --rm zocker160/blender --help`
 
 # Dockerfile for Blender
 
 Blender versions are tracked in branches. The `master` branch will always be mapped to the tag `latest`.
 
-Please visit the [GitHub Page](https://github.com/ikester/blender-docker) for details.
+Please visit the [GitHub Page](https://github.com/zocker-160/blender-docker) for details.
 
 # License
 
