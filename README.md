@@ -1,5 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
+* [`2.80`, `testing` (*2.80/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/testing/Dockerfile)
 * [`2.79b`, `latest` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79b/Dockerfile)
 * [`2.79a`, (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79a/Dockerfile)
 * [`2.79`, (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79/Dockerfile)
