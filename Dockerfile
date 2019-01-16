@@ -1,8 +1,8 @@
 FROM ubuntu:xenial
 
-LABEL authors="Isaac (Ike) Arias <ikester@gmail.com>"
+LABEL authors="Isaac (Ike) Arias <ikester@gmail.com>, zocker-160"
 
-RUN apt-get update && \
+MAINTAINER zocker-160
 	apt-get install -y \
 		curl \
 		bzip2 \
