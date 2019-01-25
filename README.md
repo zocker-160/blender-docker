@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
-* [`2.78a`, `latest` (*2.78a/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.78a/Dockerfile)
-* [`2.77a` (*2.77a/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.77a/Dockerfile)
-* [`2.76b` (*2.76b/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.76b/Dockerfile)
-* [`2.75a` (*2.75a/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.75a/Dockerfile)
-* [`2.73a` (*2.73a/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.73a/Dockerfile)
+* [`2.78a`(*2.78a/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.78a/Dockerfile)
+* [`2.77a`(*2.77a/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.77a/Dockerfile)
+* [`2.76b`(*2.76b/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.76b/Dockerfile)
+* [`2.75a`(*2.75a/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.75a/Dockerfile)
+* [`2.73a`(*2.73a/Dockerfile*)](https://github.com/ikester/blender-docker/blob/2.73a/Dockerfile)
 
 These are the Docker Hub Blender autobuild images located [here](https://hub.docker.com/r/ikester/blender-autobuild/). For manual builds [look here](https://hub.docker.com/r/ikester/blender/) instead.
 
