@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-* [`2.80-beta` (*2.80/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/testing/Dockerfile)
-* [`2.79b`, `latest` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79b/Dockerfile) | [`2.79b-base` (2.79b/baseimage/Dockerfile)](https://github.com/zocker-160/blender-docker/blob/2.79b-base/Dockerfile) 
+* [`2.80-beta`, `latest` (*2.80/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/testing/Dockerfile) | [`2.80-base` (2.80/baseimage/Dockerfile)](https://github.com/zocker-160/blender-docker/blob/2.80-base/Dockerfile) 
+* [`2.79b` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79b/Dockerfile) | [`2.79b-base` (2.79b/baseimage/Dockerfile)](https://github.com/zocker-160/blender-docker/blob/2.79b-base/Dockerfile) 
 * [`2.79a` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79a/Dockerfile)
 * [`2.79` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79/Dockerfile)
 * [`2.78c` (*2.78c/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.78c/Dockerfile)
