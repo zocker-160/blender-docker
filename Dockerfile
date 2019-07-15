@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:10-slim
 
 LABEL authors="Isaac (Ike) Arias <ikester@gmail.com>, zocker-160"
 
