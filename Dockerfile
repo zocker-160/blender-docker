@@ -22,9 +22,9 @@ RUN \
 
 
 ENV BLENDER_MAJOR 2.80
-ENV BLENDER_VERSION 2.80.74
+ENV BLENDER_VERSION 2.80-rc1
 # ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_MAJOR/blender-$BLENDER_VERSION-linux-glibc219-x86_64.tar.bz2
-ENV BLENDER_BZ2_URL https://builder.blender.org/download/blender-2.80-a42cae160082-linux-glibc217-x86_64.tar.bz2
+ENV BLENDER_BZ2_URL https://ftp.halifax.rwth-aachen.de/blender/release/Blender2.80/blender-2.80rc1-linux-glibc217-x86_64.tar.bz2
 
 
 RUN mkdir /usr/local/blender \
