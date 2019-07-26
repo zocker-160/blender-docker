@@ -22,7 +22,7 @@ RUN \
 
 
 ENV BLENDER_MAJOR 2.80
-ENV BLENDER_VERSION 2.80rc2
+ENV BLENDER_VERSION 2.80rc3
 ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_MAJOR/blender-$BLENDER_VERSION-linux-glibc217-x86_64.tar.bz2
 
 
