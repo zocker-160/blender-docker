@@ -7,7 +7,7 @@ MAINTAINER zocker-160
 
 RUN \
 	apt-get update \
-	&& apt-get install -y wget \
+	&& apt-get install -y \
 	unzip \
 	tar \
 	curl \
@@ -21,9 +21,8 @@ RUN \
 	&& rm -rf /var/lib/apt/lists/*
 
 
-ENV BLENDER_MAJOR 2.80
-ENV BLENDER_VERSION 2.80
-ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_MAJOR/blender-$BLENDER_VERSION-linux-glibc217-x86_64.tar.bz2
+ENV BLENDER_VERSION 2.81
+ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_VERSION/blender-$BLENDER_VERSION-linux-glibc217-x86_64.tar.bz2
 
 
 RUN mkdir /usr/local/blender \
