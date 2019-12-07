@@ -22,7 +22,8 @@ RUN \
 
 
 ENV BLENDER_VERSION 2.81
-ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_VERSION/blender-$BLENDER_VERSION-linux-glibc217-x86_64.tar.bz2
+ENV BLENDER_MINOR 2.81a
+ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_VERSION/blender-$BLENDER_MINOR-linux-glibc217-x86_64.tar.bz2
 
 
 RUN mkdir /usr/local/blender \
