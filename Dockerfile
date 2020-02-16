@@ -9,7 +9,7 @@ RUN \
 	apt-get update \
 	&& apt-get install -y \
 	unzip \
-	tar \
+	dtrx \
 	curl \
 	bzip2 \
 	libfreetype6 \
@@ -21,15 +21,17 @@ RUN \
 	&& rm -rf /var/lib/apt/lists/*
 
 
-ENV BLENDER_VERSION 2.81
-ENV BLENDER_MINOR 2.81a
-ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_VERSION/blender-$BLENDER_MINOR-linux-glibc217-x86_64.tar.bz2
+ENV BLENDER_VERSION 2.82
+ENV BLENDER_MINOR 2.82
+ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_VERSION/blender-$BLENDER_MINOR-linux64.tar.xz
+
+WORKDIR /usr/local
+
+RUN curl -SL "$BLENDER_BZ2_URL" -o blender.tar.xz \
+	&& dtrx -n blender.tar.xz \
+	&& ls -l \
+	&& ls -l /usr/local/blender \
+	&& rm blender.tar.xz
 
 
-RUN mkdir /usr/local/blender \
-	&& curl -SL "$BLENDER_BZ2_URL" -o blender.tar.bz2 \
-	&& tar -jxvf blender.tar.bz2 -C /usr/local/blender --strip-components=1 \
-	&& rm blender.tar.bz2
-
-	
-RUN /usr/local/blender/blender -b --version
+RUN /usr/local/blender/blender-$BLENDER_MINOR-linux64/blender -b --version
