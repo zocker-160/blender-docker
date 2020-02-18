@@ -28,10 +28,8 @@ ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_
 WORKDIR /usr/local
 
 RUN curl -SL "$BLENDER_BZ2_URL" -o blender.tar.xz \
-	&& dtrx -n blender.tar.xz \
-	&& ls -l \
-	&& ls -l /usr/local/blender \
+	&& dtrx -n --one rename blender.tar.xz \
 	&& rm blender.tar.xz
 
 
-RUN /usr/local/blender/blender-$BLENDER_MINOR-linux64/blender -b --version
+RUN /usr/local/blender/blender -b --version
