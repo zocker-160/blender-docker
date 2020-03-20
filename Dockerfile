@@ -22,7 +22,7 @@ RUN \
 
 
 ENV BLENDER_VERSION 2.82
-ENV BLENDER_MINOR 2.82
+ENV BLENDER_MINOR 2.82a
 ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_VERSION/blender-$BLENDER_MINOR-linux64.tar.xz
 
 WORKDIR /usr/local
