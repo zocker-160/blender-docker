@@ -22,14 +22,14 @@
 
 This image is intended to be used as a command line, render-only node for `.blend` files. You will need to create the 3D files beforehand using Blender's full GUI or download one from the many Blender file sharing sites like [Blend Swap](http://www.blendswap.com).
 
-The entry point for this image is the blender non-gui command line `blender -b`. You can use the `/media/` directory to mount a volume with source files.
+The entry point for this image is the blender non-gui command line `blender -b`. You can use the `/data/` directory to mount a volume with source files.
 
 # Rendering a single frame
 
 To render a single frame from a `blendfile.blend` file located in `/source/path` on the docker host and save the result in the same directory:
 
 ```console
-$ docker run --rm -v /source/path/:/media/ zocker160/blender /media/blendfile.blend -o /media/frame_### -f 1
+$ docker run --rm -v /source/path/:/data/ zocker160/blender /data/blendfile.blend -o /data/frame_### -f 1
 ```
 
 This will create a file named `frame_001.png` in the same directory as the source file, assuming that PNG is the default output format for that file.
