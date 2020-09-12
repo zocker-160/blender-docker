@@ -29,6 +29,8 @@ RUN curl -SL "$BLENDER_BZ2_URL" -o blender.tar.xz \
 	&& dtrx -n --one rename blender.tar.xz \
 	&& rm blender.tar.xz
 
+WORKDIR /data
+
 RUN /usr/local/blender/blender -b --version
 
 ENTRYPOINT ["/usr/local/blender/blender", "-b"]
