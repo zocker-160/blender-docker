@@ -6,10 +6,8 @@ MAINTAINER zocker-160
 RUN \
 	apt-get update \
 	&& apt-get install -y \
-	unzip \
-	dtrx \
 	curl \
-	bzip2 \
+	xz-utils \
 	libfreetype6 \
 	libgl1-mesa-dev \
 	libglu1-mesa \
@@ -23,10 +21,10 @@ ENV BLENDER_VERSION 2.83
 ENV BLENDER_MINOR 2.83.6
 ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_VERSION/blender-$BLENDER_MINOR-linux64.tar.xz
 
-WORKDIR /usr/local
+WORKDIR /usr/local/blender
 
 RUN curl -SL "$BLENDER_BZ2_URL" -o blender.tar.xz \
-	&& dtrx -n --one rename blender.tar.xz \
+	&& tar -xf blender.tar.xz --strip-components=1 \
 	&& rm blender.tar.xz
 
 WORKDIR /data
