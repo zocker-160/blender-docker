@@ -32,3 +32,5 @@ RUN mkdir /usr/local/blender \
 	&& rm blender.tar.bz2
 
 RUN /usr/local/blender/blender -b -noaudio --version
+
+ENTRYPOINT ["/usr/local/blender/blender", "-b", "-noaudio"]
