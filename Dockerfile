@@ -31,4 +31,4 @@ RUN mkdir /usr/local/blender \
 	&& tar -jxvf blender.tar.bz2 -C /usr/local/blender --strip-components=1 \
 	&& rm blender.tar.bz2
 
-RUN /usr/local/blender/blender -b --version
+RUN /usr/local/blender/blender -b -noaudio --version
