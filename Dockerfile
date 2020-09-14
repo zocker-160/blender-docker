@@ -31,6 +31,6 @@ RUN curl -SL "$BLENDER_BZ2_URL" -o blender.tar.xz \
 
 WORKDIR /data
 
-RUN /usr/local/blender/blender -b --version
+RUN /usr/local/blender/blender -b -noaudio --version
 
-ENTRYPOINT ["/usr/local/blender/blender", "-b"]
+ENTRYPOINT ["/usr/local/blender/blender", "-b", "-noaudio"]
