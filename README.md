@@ -5,7 +5,7 @@
 * [`2.82` (*2.82/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.82/Dockerfile) | [`2.82-base` (2.82/baseimage/Dockerfile)](https://github.com/zocker-160/blender-docker/blob/2.82-base/Dockerfile) 
 * [`2.81` (*2.81/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.81/Dockerfile) | [`2.81-base` (2.81/baseimage/Dockerfile)](https://github.com/zocker-160/blender-docker/blob/2.81-base/Dockerfile) 
 * [`2.80` (*2.80/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.80/Dockerfile) | [`2.80-base` (2.80/baseimage/Dockerfile)](https://github.com/zocker-160/blender-docker/blob/2.80-base/Dockerfile) 
-* [`2.79b` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79b/Dockerfile) | [`2.79b-base` (2.79b/baseimage/Dockerfile)](https://github.com/zocker-160/blender-docker/blob/2.79b-base/Dockerfile) 
+* [`2.79b` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79b/Dockerfile)
 * [`2.79a` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79a/Dockerfile)
 * [`2.79` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79/Dockerfile)
 * [`2.78c` (*2.78c/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.78c/Dockerfile)
