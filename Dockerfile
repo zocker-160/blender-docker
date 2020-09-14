@@ -5,11 +5,10 @@ MAINTAINER zocker-160
 
 RUN \
 	apt-get update \
-	&& apt-get install -y wget \
-	unzip \
-	tar \
+	&& apt-get install -y \
 	curl \
-	bzip2 \
+	xz-utils \
+	lbzip2 \
 	libfreetype6 \
 	libgl1-mesa-dev \
 	libglu1-mesa \
@@ -23,11 +22,11 @@ ENV BLENDER_MAJOR 2.79
 ENV BLENDER_VERSION 2.79b
 ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_MAJOR/blender-$BLENDER_VERSION-linux-glibc219-x86_64.tar.bz2
 
+WORKDIR /usr/local/blender
 
-RUN mkdir /usr/local/blender \
-	&& curl -SL "$BLENDER_BZ2_URL" -o blender.tar.bz2 \
-	&& tar -jxvf blender.tar.bz2 -C /usr/local/blender --strip-components=1 \
-	&& rm blender.tar.bz2
+RUN curl -SL "$BLENDER_BZ2_URL" -o blender.tar.xz \
+	&& tar -xf blender.tar.xz --strip-components=1 \
+	&& rm blender.tar.xz
 
 RUN /usr/local/blender/blender -b -noaudio --version
 
