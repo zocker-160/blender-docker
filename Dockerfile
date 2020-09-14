@@ -1,4 +1,4 @@
-FROM debian:10-slim
+FROM nvidia/cuda:10.2-base
 
 LABEL authors="Isaac (Ike) Arias <ikester@gmail.com>, zocker-160"
 MAINTAINER zocker-160
