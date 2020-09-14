@@ -8,6 +8,7 @@ RUN \
 	&& apt-get install -y \
 	curl \
 	xz-utils \
+	lbzip2 \
 	libfreetype6 \
 	libgl1-mesa-dev \
 	libglu1-mesa \
