@@ -5,6 +5,6 @@ MAINTAINER zocker-160
 
 VOLUME /media
 
-RUN /usr/local/blender/blender -b --version
+RUN /usr/local/blender/blender -b -noaudio --version
 
-ENTRYPOINT ["/usr/local/blender/blender", "-b"]
+ENTRYPOINT ["/usr/local/blender/blender", "-b", "-noaudio"]
