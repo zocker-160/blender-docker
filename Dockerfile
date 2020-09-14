@@ -3,8 +3,6 @@ FROM debian:10-slim
 LABEL authors="Isaac (Ike) Arias <ikester@gmail.com>, zocker-160"
 MAINTAINER zocker-160
 
-ENV DEBIAN_FRONTEND noninteractive
-
 RUN \
 	apt-get update \
 	&& apt-get install -y \
@@ -17,8 +15,6 @@ RUN \
 	libglu1-mesa \
 	libxi6 \
 	libxrender1 \
-	xorg \
-	xterm \
 	&& apt-get -y autoremove \
 	&& rm -rf /var/lib/apt/lists/*
 
@@ -35,8 +31,6 @@ RUN curl -SL "$BLENDER_BZ2_URL" -o blender.tar.xz \
 
 WORKDIR /data
 
-RUN /usr/local/blender/blender -b --version
+RUN /usr/local/blender/blender -b -noaudio --version
 
-#ENTRYPOINT ["/usr/local/blender/blender"]
-
-CMD /usr/local/blender/blender
+ENTRYPOINT ["/usr/local/blender/blender", "-b", "-noaudio"]
