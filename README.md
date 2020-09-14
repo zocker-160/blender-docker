@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
-* [`2.90`, `latest`, (*master/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/master/Dockerfile)
-* [`2.83-LTS`, `LTS`, (*LTS/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/LTS/Dockerfile)
-* [`2.82` (*2.82/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.82/Dockerfile) | [`2.82-base` (2.82/baseimage/Dockerfile)](https://github.com/zocker-160/blender-docker/blob/2.82-base/Dockerfile) 
-* [`2.81` (*2.81/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.81/Dockerfile) | [`2.81-base` (2.81/baseimage/Dockerfile)](https://github.com/zocker-160/blender-docker/blob/2.81-base/Dockerfile) 
-* [`2.80` (*2.80/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.80/Dockerfile) | [`2.80-base` (2.80/baseimage/Dockerfile)](https://github.com/zocker-160/blender-docker/blob/2.80-base/Dockerfile) 
-* [`2.79b` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79b/Dockerfile)
+* [`2.90`, `latest` (*master/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/master/Dockerfile) | [`2.90-cuda10`, `cuda10` (*master/Dockerfile.cuda10*)](https://github.com/zocker-160/blender-docker/blob/master/Dockerfile.cuda10)
+* [`2.83-LTS`, `LTS` (*LTS/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/LTS/Dockerfile) | [`2.83-LTS-cuda10`. `LTS-cuda10` (*LTS/Dockerfile.cuda10*)](https://github.com/zocker-160/blender-docker/blob/LTS/Dockerfile.cuda10)
+* [`2.82` (*2.82/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.82/Dockerfile)
+* [`2.81` (*2.81/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.81/Dockerfile)
+* [`2.80` (*2.80/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.80/Dockerfile)
+* [`2.79b` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79b/Dockerfile) | [`2.79b-cuda10` (*2.79/Dockerfile.cuda10*)](https://github.com/zocker-160/blender-docker/blob/2.79b/Dockerfile.cuda10)
 * [`2.79a` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79a/Dockerfile)
 * [`2.79` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79/Dockerfile)
 * [`2.78c` (*2.78c/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.78c/Dockerfile)
@@ -31,6 +31,8 @@ To render a single frame from a `blendfile.blend` file located in `/source/path`
 ```console
 $ docker run --rm -v /source/path/:/data/ zocker160/blender /data/blendfile.blend -o /data/frame_### -f 1
 ```
+
+**important:** If you you a Nvidia based image for CUDA, you need to pass the `--gpus all` argument as well.
 
 This will create a file named `frame_001.png` in the same directory as the source file, assuming that PNG is the default output format for that file.
 
