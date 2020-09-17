@@ -1,10 +1,14 @@
-FROM nvidia/cuda:10.2-base
+#FROM nvidia/cuda:10.2-base
+FROM nvidia/cudagl:10.2-base
 
 LABEL authors="Isaac (Ike) Arias <ikester@gmail.com>, zocker-160"
 MAINTAINER zocker-160
 
-RUN \
-	apt-get update \
+ENV DEBIAN_FRONTEND noninteractive
+ENV NVIDIA_DRIVER_CAPABILITIES all
+
+# Blender dependencies
+RUN apt-get update \
 	&& apt-get install -y \
 	curl \
 	xz-utils \
@@ -13,9 +17,20 @@ RUN \
 	libglu1-mesa \
 	libxi6 \
 	libxrender1 \
+	mesa-utils
+
+# Xserver testing
+# 	lightdm
+RUN apt-get install -y \
+	xorg \
+	dbus-x11 \
 	&& apt-get -y autoremove \
 	&& rm -rf /var/lib/apt/lists/*
 
+COPY virtualgl_2.6.4_amd64.deb .
+#COPY virtualgl32_2.6.4_amd64.deb .
+
+RUN dpkg -i virtualgl*.deb
 
 ENV BLENDER_VERSION 2.90
 ENV BLENDER_MINOR 2.90.0
@@ -31,4 +46,4 @@ WORKDIR /data
 
 RUN /usr/local/blender/blender -b -noaudio --version
 
-ENTRYPOINT ["/usr/local/blender/blender", "-b", "-noaudio"]
+#ENTRYPOINT ["/usr/local/blender/blender", "-b", "-noaudio"]
