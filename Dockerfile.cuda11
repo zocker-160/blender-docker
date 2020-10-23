@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.1-base
+FROM nvidia/cuda:11.0-base
 
 LABEL authors="Isaac (Ike) Arias <ikester@gmail.com>, zocker-160"
 MAINTAINER zocker-160
