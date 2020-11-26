@@ -18,8 +18,8 @@ RUN \
 
 
 ENV BLENDER_VERSION 2.83
-ENV BLENDER_MINOR 2.83.8
-ENV BLENDER_BZ2_URL https://mirror.clarkson.edu/blender/release/Blender$BLENDER_VERSION/blender-$BLENDER_MINOR-linux64.tar.xz
+ENV BLENDER_MINOR 2.83.9
+ENV BLENDER_BZ2_URL https://download.blender.org/release/release/Blender$BLENDER_VERSION/blender-$BLENDER_MINOR-linux64.tar.xz
 
 WORKDIR /usr/local/blender
 
