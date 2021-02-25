@@ -1,6 +1,7 @@
-# Supported tags and respective `Dockerfile` links
+# Supported tags
 
-* [`2.91`, `latest` (*master/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/master/Dockerfile) | `cuda10` | `cuda11`
+* [`2.92`, `latest` (*master/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/master/Dockerfile) | `cuda10` | `cuda11`
+* [`2.91` (*2.91/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.91/Dockerfile) | `2.91-cuda10` | `2.91-cuda11`
 * [`2.90` (*2.90/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.90/Dockerfile) | `2.90-cuda10` | `2.90-cuda11`
 * [`2.83-LTS`, `LTS` (*LTS/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/LTS/Dockerfile) | `2.83-LTS-cuda10`, `LTS-cuda10`| `2.83-LTS-cuda11`, `LTS-cuda11`
 * [`2.82` (*2.82/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.82/Dockerfile) | [`2.82-cuda10` (*2.82/Dockerfile.cuda10*)](https://github.com/zocker-160/blender-docker/blob/2.82/Dockerfile.cuda10)
