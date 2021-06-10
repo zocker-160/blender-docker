@@ -1,18 +1,33 @@
-name: Docker Image CI
+name: Docker Builder
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
 
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        - branch: master
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      env:
+        HUB_NAME: ${{ secrets.DOCKER_NAME }}
+        HUB_KEY: ${{ secrets.DOCKER_TOKEN }}    
+      run: |
+        docker login -u $HUB_NAME -p $HUB_KEY
+        
+        docker build .  --pull --no-cache -f Dockerfile -t zocker160/blender:latest
+        docker build .  --pull --no-cache -f Dockerfile.cuda10 -t zocker160/blender:2.92-cuda10
+        docker build .  --pull --no-cache -f Dockerfile.cuda11 -t zocker160/blender:2.92-cuda11
+        
+        docker tag zocker160/blender:latest zocker160/blender:2.92
+        docker push zocker160/blender:latest
+        docker push zocker160/blender:2.92
+        
+        docker push zocker160/blender:2.92-cuda10
+        docker push zocker160/blender:2.92-cuda11
