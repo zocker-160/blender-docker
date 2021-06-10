@@ -1,0 +1,27 @@
+name: Docker Builder
+
+on:
+  push:
+    branches:
+      - LTS-2.83
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      env:
+        HUB_NAME: ${{ secrets.DOCKER_NAME }}
+        HUB_KEY: ${{ secrets.DOCKER_TOKEN }}    
+      run: |
+        docker login -u $HUB_NAME -p $HUB_KEY
+        
+        docker build .  --pull --no-cache -f Dockerfile -t zocker160/blender:2.83-LTS
+        docker build .  --pull --no-cache -f Dockerfile.cuda10 -t zocker160/blender:2.83-LTS-cuda10
+        docker build .  --pull --no-cache -f Dockerfile.cuda11 -t zocker160/blender:2.83-LTS-cuda11
+        
+        docker push zocker160/blender:2.83-LTS
+        docker push zocker160/blender:2.83-LTS-cuda10
+        docker push zocker160/blender:2.83-LTS-cuda11
