@@ -17,6 +17,10 @@
 * [`2.75a` (*2.75a/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.75a/Dockerfile)
 * [`2.73a` (*2.73a/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.73a/Dockerfile)
 
+[![Docker 2.83 LTS](https://github.com/zocker-160/blender-docker/actions/workflows/docker-283-LTS.yml/badge.svg)](https://github.com/zocker-160/blender-docker/actions/workflows/docker-283-LTS.yml)
+[![Docker 2.93 LTS](https://github.com/zocker-160/blender-docker/actions/workflows/docker-293-LTS.yml/badge.svg)](https://github.com/zocker-160/blender-docker/actions/workflows/docker-293-LTS.yml)
+[![Docker latest](https://github.com/zocker-160/blender-docker/actions/workflows/docker-latest.yml/badge.svg)](https://github.com/zocker-160/blender-docker/actions/workflows/docker-latest.yml)
+
 # What is Blender?
 
 [Blender](https://www.blender.org) is a free and open source 3D animation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation. Advanced users employ Blender’s API for Python scripting to customize the application and write specialized tools; often these are included in Blender’s future releases. Blender is well suited to individuals and small studios who benefit from its unified pipeline and responsive development process.
