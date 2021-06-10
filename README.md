@@ -1,9 +1,10 @@
 # Supported tags
 
-* [`2.92`, `latest` (*master/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/master/Dockerfile) | `2.92-cuda10` | `2.92-cuda11`
+* [`2.93-LTS`, `latest` (*master/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/master/Dockerfile) | `2.93-LTS-cuda10` | `2.93-LTS-cuda11`
+* [`2.92`, (*2.92/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.92/Dockerfile) | `2.92-cuda10` | `2.92-cuda11`
 * [`2.91` (*2.91/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.91/Dockerfile) | `2.91-cuda10` | `2.91-cuda11`
 * [`2.90` (*2.90/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.90/Dockerfile) | `2.90-cuda10` | `2.90-cuda11`
-* [`2.83-LTS`, `LTS` (*LTS/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/LTS/Dockerfile) | `2.83-LTS-cuda10` | `2.83-LTS-cuda11`
+* [`2.83-LTS` (*LTS-2.83/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/LTS-2.83/Dockerfile) | `2.83-LTS-cuda10` | `2.83-LTS-cuda11`
 * [`2.82` (*2.82/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.82/Dockerfile) | `2.82-cuda10`
 * [`2.81` (*2.81/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.81/Dockerfile) | `2.81-cuda10`
 * [`2.80` (*2.80/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.80/Dockerfile) | `2.80-cuda10`
