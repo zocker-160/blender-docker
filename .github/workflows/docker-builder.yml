@@ -6,14 +6,11 @@ on:
       - master
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        branch: master
     - name: Build the Docker image
       env:
         HUB_NAME: ${{ secrets.DOCKER_NAME }}
