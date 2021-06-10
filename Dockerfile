@@ -19,7 +19,7 @@ RUN \
 
 ENV BLENDER_VERSION 2.93
 ENV BLENDER_MINOR 2.93.0
-ENV BLENDER_BZ2_URL https://download.blender.org/release/Blender$BLENDER_VERSION/blender-$BLENDER_MINOR-linux64.tar.xz
+ENV BLENDER_BZ2_URL https://download.blender.org/release/Blender$BLENDER_VERSION/blender-$BLENDER_MINOR-linux-x64.tar.xz
 
 ENV BLENDER_PYV "py_3_9"
 
