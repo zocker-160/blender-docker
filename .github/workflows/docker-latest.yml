@@ -1,4 +1,4 @@
-name: Docker Builder
+name: Docker latest
 
 on:
   push:

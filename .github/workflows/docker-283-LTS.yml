@@ -1,4 +1,4 @@
-name: Docker Builder
+name: Docker 2.83 LTS
 
 on:
   push:
