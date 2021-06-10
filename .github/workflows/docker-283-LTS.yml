@@ -3,7 +3,7 @@ name: Docker 2.83 LTS
 on:
   push:
     branches:
-      - LTS-2.83
+      - master
 
 jobs:
   build:
@@ -11,6 +11,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: 'LTS-2.83'
     - name: Build the Docker image
       env:
         HUB_NAME: ${{ secrets.DOCKER_NAME }}
