@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.0-base
+FROM nvidia/cuda:11.0.3-base-ubuntu20.04
 
 LABEL authors="Isaac (Ike) Arias <ikester@gmail.com>, zocker-160"
 MAINTAINER zocker-160
@@ -17,11 +17,11 @@ RUN \
 	&& rm -rf /var/lib/apt/lists/*
 
 
-ENV BLENDER_VERSION 2.83
-ENV BLENDER_MINOR 2.83.15
+ENV BLENDER_VERSION 2.93
+ENV BLENDER_MINOR 2.93.0
 ENV BLENDER_BZ2_URL https://download.blender.org/release/Blender$BLENDER_VERSION/blender-$BLENDER_MINOR-linux-x64.tar.xz
 
-ENV BLENDER_PYV "py_3_7"
+ENV BLENDER_PYV "py_3_9"
 
 WORKDIR /usr/local/blender
 
