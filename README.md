@@ -1,13 +1,13 @@
 # Supported tags
 
-* [`2.92`, `latest` (*master/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/master/Dockerfile) | `cuda10` | `cuda11`
+* [`2.92`, `latest` (*master/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/master/Dockerfile) | `2.92-cuda10` | `2.92-cuda11`
 * [`2.91` (*2.91/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.91/Dockerfile) | `2.91-cuda10` | `2.91-cuda11`
 * [`2.90` (*2.90/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.90/Dockerfile) | `2.90-cuda10` | `2.90-cuda11`
-* [`2.83-LTS`, `LTS` (*LTS/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/LTS/Dockerfile) | `2.83-LTS-cuda10`, `LTS-cuda10`| `2.83-LTS-cuda11`, `LTS-cuda11`
-* [`2.82` (*2.82/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.82/Dockerfile) | [`2.82-cuda10` (*2.82/Dockerfile.cuda10*)](https://github.com/zocker-160/blender-docker/blob/2.82/Dockerfile.cuda10)
-* [`2.81` (*2.81/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.81/Dockerfile) | [`2.81-cuda10` (*2.81/Dockerfile.cuda10*)](https://github.com/zocker-160/blender-docker/blob/2.81/Dockerfile.cuda10)
-* [`2.80` (*2.80/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.80/Dockerfile) | [`2.80-cuda10` (*2.80/Dockerfile.cuda10*)](https://github.com/zocker-160/blender-docker/blob/2.80/Dockerfile.cuda10)
-* [`2.79b` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79b/Dockerfile) | [`2.79b-cuda10` (*2.79/Dockerfile.cuda10*)](https://github.com/zocker-160/blender-docker/blob/2.79b/Dockerfile.cuda10)
+* [`2.83-LTS`, `LTS` (*LTS/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/LTS/Dockerfile) | `2.83-LTS-cuda10` | `2.83-LTS-cuda11`
+* [`2.82` (*2.82/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.82/Dockerfile) | `2.82-cuda10`
+* [`2.81` (*2.81/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.81/Dockerfile) | `2.81-cuda10`
+* [`2.80` (*2.80/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.80/Dockerfile) | `2.80-cuda10`
+* [`2.79b` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79b/Dockerfile) | `2.79b-cuda10`
 * [`2.79a` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79a/Dockerfile)
 * [`2.79` (*2.79/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.79/Dockerfile)
 * [`2.78c` (*2.78c/Dockerfile*)](https://github.com/zocker-160/blender-docker/blob/2.78c/Dockerfile)
